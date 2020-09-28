@@ -9,11 +9,9 @@ for r in range(100):
 t2 = input.running_time_micros()
 print("\n\n\n"+str((t2-t1)/1000)+"\n\n\n") '''
 
-showNumberWithLeds(12)
-basic.pause(1000)
-showNumberWithLeds(2)
-basic.pause(1000)
-showNumberWithLeds(24)
+for i in range(26):
+    showNumberWithLeds(25-i)
+    basic.pause(1000)
 
 # light or dim leds to display a new number
 def showNumberWithLeds(newNum):

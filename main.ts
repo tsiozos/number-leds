@@ -1,3 +1,4 @@
+let i: number;
 /**  t1 = input.running_time_micros()
 for r in range(100):
     for i in range(25):
@@ -15,11 +16,10 @@ print("
 
 ") 
  */
-showNumberWithLeds(12)
-basic.pause(1000)
-showNumberWithLeds(2)
-basic.pause(1000)
-showNumberWithLeds(24)
+for (i = 0; i < 26; i++) {
+    showNumberWithLeds(25 - i)
+    basic.pause(1000)
+}
 //  light or dim leds to display a new number
 function showNumberWithLeds(newNum: number) {
     let i: number;
